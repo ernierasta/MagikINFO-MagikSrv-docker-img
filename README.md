@@ -11,7 +11,7 @@ docker run --name magiksrv --restart always -p6810:6810 -d magikinfo/magiksrv
 ```
 
 Explanation:
-`--name magiksrv` - name running container,
-`--restart always` - keeps container running, restarts it automatically,
-`-p6810:6810` - expose communication server port to the host,
-`-d` - run in background (detach console).
+* `--name magiksrv` - name running container,
+* `--restart always` - keeps container running, restarts it automatically,
+* `-p6810:6810` - expose communication server port to the host,
+* `-d` - run in background (detach console).
