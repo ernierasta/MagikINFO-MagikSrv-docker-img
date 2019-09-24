@@ -7,10 +7,13 @@ We currently ship version 14.0 due to compatibility reasons, but it is working w
 Usage:
 
 ``` bash
-docker run --name magiksrv --restart always -p6810:6810 -d magikinfo/magiksrv
+docker run -v /host/MagikSrv:/opt/MagikSrv --name magiksrv --restart always -p6810:6810 -d magikinfo/magiksrv
 ```
 
+If you want to start with empty data folder, just specify non-existing path (docker will create it for You). Let's say `-v /opt/MagikSrv:/opt/MagikSrv` which will mount host directory into container. Do not change path in container, Communication Server expects it's data in `/opt/MagikSrv`.
+
 Explanation:
+* `-v /host/MagikSrv:/opt/MagikSrv` - mount Communication Server data into container,
 * `--name magiksrv` - name running container,
 * `--restart always` - keeps container running, restarts it automatically,
 * `-p6810:6810` - expose communication server port to the host,
