@@ -9,7 +9,7 @@ RUN echo "https://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/reposi
 RUN apk add --no-cache mono libgdiplus xvfb font-dejavu
 
 # get MagikSrv files
-RUN wget "http://magikinfo.cz/data/downloads/tools/MagikSrv-14.0.tar.bz2" -O "/magiksrv.tar.bz2" && \
+RUN wget "http://magikinfo.cz/data/downloads/toolbox/MagikSrv-18.5.tar.bz2" -O "/magiksrv.tar.bz2" && \
     tar xf "/magiksrv.tar.bz2" && \
     rm "/magiksrv.tar.bz2"
 
