@@ -2,7 +2,7 @@
 
 This is MagikINFO MagikSrv Linux docker image based on Alpine Linux.
 
-We currently ship version 14.0 due to compatibility reasons, but it is working well with current version of MagikINFO.
+We currently ship version ~~14.0 due to compatibility reasons, but~~ 18.5, it is working well with current version of MagikINFO.
 
 Usage:
 
