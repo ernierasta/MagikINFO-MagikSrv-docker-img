@@ -18,3 +18,6 @@ Explanation:
 * `--restart always` - keeps container running, restarts it automatically,
 * `-p6810:6810` - expose communication server port to the host,
 * `-d` - run in background (detach console).
+
+In `MagikSrv` directory, there are files which ends up in tarball downloaded from our servers when building docker image. I am including it
+here for completeness.
